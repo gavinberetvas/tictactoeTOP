@@ -1,0 +1,20 @@
+* {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#board {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.piece {
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+}
