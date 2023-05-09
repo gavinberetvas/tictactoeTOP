@@ -43,6 +43,9 @@ function checkForWins() {
     return true;
   }
 
+  if (makeBoard.playedSquares.length >= 9) {
+    openModal(modal);
+  }
   return false;
 }
 
