@@ -9,6 +9,12 @@
     <script src="app.js" defer></script>
 </head>
 <body>
+    <div  id="modal" class="modal">
+        <h1 id="winner">`${currentPlayer} Wins`</h1>
+        <button id="reset"><p>Play Again?!?</p></button>
+    </div>
+    <div id="overlay"></div>
+    <h1 class="header">Mediocre Tic Tac Toe</h1>
     <div id="board">
         <div class="piece" data-x="0" data-y="0"></div>
         <div class="piece" data-x="0" data-y="1"></div>
@@ -20,5 +26,6 @@
         <div class="piece" data-x="2" data-y="1"></div>
         <div class="piece" data-x="2" data-y="2"></div>
     </div>
+    
 </body>
 </html>

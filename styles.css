@@ -5,16 +5,71 @@
     box-sizing: border-box;
 }
 
+.header {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
 #board {
     display: grid;
     width: 600px;
     height: 600px;
     grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    
     /* grid-template-rows: repeat(3, 1fr); */
 }
 
 .piece {
     width: 200px;
     height: 200px;
-    background-color: bisque;
+    background-color: white;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 4rem;
 }
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    max-width: 80%;
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0%;
+    transition: ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #reset {
+    width: 10rem;
+    height: 5rem;
+  }
+  
