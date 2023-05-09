@@ -94,20 +94,3 @@ function gameLogic() {
 }
 
 gameLogic();
-
-// const divElement = document.getElementById("board");
-
-// divElement.addEventListener("click", function (event) {
-//   let dataX = event.target.getAttribute("data-x");
-//   let dataY = event.target.getAttribute("data-y");
-
-//   currentPlayer.makeMove(dataX, dataY);
-
-//   if (currentPlayer == player1) {
-//     currentPlayer = player2;
-//   } else {
-//     currentPlayer = player1;
-//   }
-
-//   alert(makeBoard.gameBoard);
-// });
